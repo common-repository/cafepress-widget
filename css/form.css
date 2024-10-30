@@ -1,0 +1,44 @@
+#cp-color-theme {
+  border: 1px solid #333333;
+  height: 90px;
+  padding: 3px 0 0 3px;
+  width: 350px;
+}
+#cp-color-theme span {margin: 3px 4px;width:20px;height:20px;display:inline-block;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;border:1px solid #ccc; cursor: pointer; }
+#cp-color-theme span:hover {border:1px solid #333;}
+#cp-color-theme span.active {
+  -moz-box-shadow: 1px 1px 8px #333333;
+  -webkit-box-shadow: 1px 1px 8px #333333;
+  box-shadow: 1px 1px 8px #333333;
+}
+#cp-color-theme span.white {background-color:#fff;}
+#cp-color-theme span.black {background-color:#000;}
+#cp-color-theme span.darkgrey {background-color:#666;}
+#cp-color-theme span.mediumgrey {background-color:#999;}
+#cp-color-theme span.lightgrey {background-color:#ccc;}
+#cp-color-theme span.brickred {background-color:#660000;}
+#cp-color-theme span.darkred {background-color:#990000;}
+#cp-color-theme span.brightred {background-color:#cc0000;}
+#cp-color-theme span.mediumred {background-color:#ff0000;}
+#cp-color-theme span.pink {background-color:#ff99ff;}
+#cp-color-theme span.brightorange {background-color:#ff6600;}
+#cp-color-theme span.orange {background-color:#ff9900;}
+#cp-color-theme span.lightorange {background-color:#ffcc00;}
+#cp-color-theme span.yellow {background-color:#ffff00;}
+#cp-color-theme span.lightyellow {background-color:#ffff99;}
+#cp-color-theme span.forestgreen {background-color:#333300;}
+#cp-color-theme span.darkgreen {background-color:#006600;}
+#cp-color-theme span.green {background-color:#009900;}
+#cp-color-theme span.brightgreen {background-color:#00cc00;}
+#cp-color-theme span.lightgreen {background-color:#99ff99;}
+#cp-color-theme span.navyblue {background-color:#000066;}
+#cp-color-theme span.cobaltblue {background-color:#0000cc;}
+#cp-color-theme span.bluegreen {background-color:#0099cc;}
+#cp-color-theme span.skyblue {background-color:#3366ff;}
+#cp-color-theme span.lightblue {background-color:#99ccff;}
+#cp-color-theme span.eggplant {background-color:#330066;}
+#cp-color-theme span.darkpurple {background-color:#660099;}
+#cp-color-theme span.violet {background-color:#663399;}
+#cp-color-theme span.fuchsia {background-color:#990099;}
+#cp-color-theme span.maroon {background-color:#990066;}
+

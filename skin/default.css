@@ -1,0 +1,426 @@
+div.CafePressPosts {
+  border: none !important;
+  -moz-border-radius: none !important;
+  -webkit-border-radius: none !important;
+  border-radius: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  clear:both;
+}
+div.CafePressPosts div.products ul.products li {
+  margin: 5px !important;
+  -moz-box-shadow: 1px 1px 8px #d4d4d4;
+  -webkit-box-shadow: 1px 1px 8px #d4d4d4;
+  box-shadow: 1px 1px 8px #d4d4d4;
+  border: 1px solid #e4e4e4;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 240px;
+}
+
+div.CafePressPosts div.products ul.products li:hover{
+  -moz-box-shadow: 1px 2px 12px #999;
+  -webkit-box-shadow: 1px 2px 12px #999;
+  box-shadow: 1px 2px 12px #999;
+  border: 1px solid #ccc;
+}
+
+div.CafePressWidget{
+  width: 200px;
+  height: 240px;
+  overflow:visible;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  padding: 0px;
+  position: relative;
+  -moz-box-shadow: 2px 4px 8px #ccc;
+  -webkit-box-shadow: 2px 4px 8px #ccc;
+  box-shadow: 2px 4px 8px #ccc;
+  margin: 10px 10px 15px;
+  background-color:#fff;
+}
+
+div.CafePressWidget a.nav{
+  position:absolute;
+  width: 27px;
+  height: 52px;
+  top: 80px;
+  cursor: pointer;
+  display:none;
+}
+
+div.CafePressWidget a.prev{
+  background: #333 url(assets/scrollleft-inactive.gif) no-repeat 3px center;
+  left: -10px;
+}
+
+div.CafePressWidget a.next{
+  background: #333 url(assets/scrollright-inactive.gif) no-repeat 3px center;
+  right: -10px;
+}
+
+div.CafePressWidget a.prev:active{
+  background-color: #999;
+}
+
+div.CafePressWidget a.next:active{
+  background-color: #999;
+}
+
+div.CafePressWidget div.products{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top: 0px;
+  overflow:hidden;
+}
+
+div.CafePressWidget ul.products {
+  margin: 4px 0 0 0 !important;
+  padding: 0 !important;
+  list-style: none;
+  height: 200px;
+  width: 100%;
+  position:relative;
+}
+
+div.CafePressWidget ul.products li {
+  display: block;
+  float: left;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.CafePressWidget ul.products li a.img{
+  display: block;
+  margin: 0 auto;
+  width: 164px !important;
+  height: 164px !important;
+  float: none;
+}
+
+div.CafePressWidget ul.products li img{
+  width: 164px !important;
+  height: 164px !important;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.CafePressWidget ul.products li a.descr, div.CafePressWidget ul.products li a.descr:visited{
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  padding: 5px 4px;
+  text-align: center;
+  color: #3366CC !important;
+  width: 190px;
+  text-decoration: none !important;
+  font-family: arial,helvetica,sans-serif !important;
+  font-weight: bold;
+  -moz-text-shadow: 1px 1px #ccc;
+  -webkit-text-shadow: 1px 1px #ccc;
+  text-shadow: 1px 1px #ccc;
+  float:none;
+}
+
+div.CafePressWidget ul.products li a.descr:active{
+  color:#739B04 !important;
+
+}
+
+div.CafePressWidget ul.products li b {
+  color: #333 !important;
+}
+
+div.CafePressWidget div.toolbar {
+  position: absolute;
+  bottom: 0;
+  height: 32px;
+  width: 100%;
+  left: 0;
+  background: #333;
+  color: #fff;
+  border-top: 1px solid #555;
+  -moz-border-radius: 0px 0px 4px 4px;
+  -webkit-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
+  overflow:hidden;
+}
+
+div.CafePressWidget div.toolbar a.cafepress{
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  left: 5px;
+  background: url(assets/widget_logo.png) no-repeat;
+  width: 42px;
+  height: 27px;
+  text-indent: 1240px;
+  overflow:hidden;
+}
+
+div.CafePressWidget div.toolbar a.shopshop{
+  display: block;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: url(assets/widget_see_all.png) no-repeat;
+  width: 54px;
+  height: 16px;
+  text-indent: 1240px;
+  overflow:hidden;
+}
+/* dark image theme */
+div.CafePressWidget div.toolbar.white {
+  background:#fff;
+  background-image:-moz-linear-gradient(center top , #eee 0%, #fff 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#eeeeee), to(#ffffff));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#eeeeee', endColorStr='#ffffff');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#eeeeee', endColorStr='#ffffff')";
+}
+
+div.CafePressWidget div.toolbar.pink {
+  background:#ff99ff;
+  background-image:-moz-linear-gradient(center top , #ffccff 0%, #ff99ff 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#ff3300), to(#ff0000));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#ff3300', endColorStr='#ff0000');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#ff3300', endColorStr='#ff0000')";
+}
+div.CafePressWidget div.toolbar.lightorange {
+  background:#ffcc00;
+  background-image:-moz-linear-gradient(center top , #ffdd00 0%, #ffcc00 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#ffdd00), to(#ffcc00));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#ffdd00', endColorStr='#ffcc00');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#ffdd00', endColorStr='#ffcc00')";
+}
+
+div.CafePressWidget div.toolbar.yellow {
+  background:#ffff00;
+  background-image:-moz-linear-gradient(center top , #ffff99 0%, #ffff00 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#ffff99), to(#ffff00));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#ffff99', endColorStr='#ffff00');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#ffff99', endColorStr='#ffff00')";
+}
+div.CafePressWidget div.toolbar.lightyellow {
+  background:#ffff99;
+  background-image:-moz-linear-gradient(center top , #ffffff 0%, #ffff99 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#ffff99));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#ffffff', endColorStr='#ffff99');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#ffffff', endColorStr='#ffff99')";
+}
+div.CafePressWidget div.toolbar.brightgreen {
+  background:#00cc00;
+  background-image:-moz-linear-gradient(center top , #00dd00 0%, #00cc00 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#00dd00), to(#00cc00));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#00dd00', endColorStr='#00cc00');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#00dd00', endColorStr='#00cc00')";
+}
+div.CafePressWidget div.toolbar.lightgreen {
+  background:#99ff99;
+  background-image:-moz-linear-gradient(center top , #ffffff 0%, #99ff99 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#99ff99));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#ffffff', endColorStr='#99ff99');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#ffffff', endColorStr='#99ff99')";
+}
+div.CafePressWidget div.toolbar.lightblue {
+  background:#99ccff;
+  background-image:-moz-linear-gradient(center top , #ffffff 0%, #99ccff 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#99ccff));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#ffffff', endColorStr='#99ccff');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#ffffff', endColorStr='#99ccff')";
+}
+
+div.CafePressWidget div.toolbar.white a.cafepress, div.CafePressWidget div.toolbar.pink a.cafepress,
+div.CafePressWidget div.toolbar.lightorange a.cafepress,
+div.CafePressWidget div.toolbar.yellow a.cafepress,
+div.CafePressWidget div.toolbar.lightyellow a.cafepress,
+div.CafePressWidget div.toolbar.lightgreen a.cafepress,
+div.CafePressWidget div.toolbar.brightgreen a.cafepress,
+div.CafePressWidget div.toolbar.lightblue a.cafepress
+{
+  background: url(assets/widget_logo_dark.png) no-repeat;
+}
+
+div.CafePressWidget div.toolbar.white a.shopshop, div.CafePressWidget div.toolbar.pink a.shopshop,
+div.CafePressWidget div.toolbar.lightorange a.shopshop,
+div.CafePressWidget div.toolbar.yellow a.shopshop,
+div.CafePressWidget div.toolbar.lightyellow a.shopshop,
+div.CafePressWidget div.toolbar.lightgreen a.shopshop,
+div.CafePressWidget div.toolbar.brightgreen a.shopshop,
+div.CafePressWidget div.toolbar.lightblue a.shopshop
+{
+  background: url(assets/widget_see_all_dark.png) no-repeat;
+}
+
+/* white image theme */
+div.CafePressWidget div.toolbar.black {
+  background:#000;
+  background-image:-moz-linear-gradient(center top , #333 0%, #000 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#333333), to(#000000));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#333333', endColorStr='#000000');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#333333', endColorStr='#000000')";
+}
+div.CafePressWidget div.toolbar.darkgrey {
+  background:#666;
+  background-image:-moz-linear-gradient(center top , #999 0%, #666 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#999999), to(#666666));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#999999', endColorStr='#666666');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#999999', endColorStr='#666666')";
+}
+
+div.CafePressWidget div.toolbar.mediumgrey {
+  background:#999;
+  background-image:-moz-linear-gradient(center top , #ccc 0%, #999 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#cccccc), to(#999999));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#cccccc', endColorStr='#999999');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#cccccc', endColorStr='#999999')";
+}
+
+div.CafePressWidget div.toolbar.lightgrey {
+  background:#ccc;
+  background-image:-moz-linear-gradient(center top , #eee 0%, #ccc 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#eeeeee), to(#cccccc));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#eeeeee', endColorStr='#cccccc');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#eeeeee', endColorStr='#cccccc')";
+}
+
+div.CafePressWidget div.toolbar.brickred {
+  background:#660000;
+  background-image:-moz-linear-gradient(center top , #cc0000 0%, #660000 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#cc0000), to(#660000));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#cc0000', endColorStr='#660000');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#cc0000', endColorStr='#660000')";
+}
+div.CafePressWidget div.toolbar.darkred {
+  background:#990000;
+  background-image:-moz-linear-gradient(center top , #ff0000 0%, #990000 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#ff0000), to(#990000));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#ff0000', endColorStr='#990000');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#ff0000', endColorStr='#990000')";
+}
+div.CafePressWidget div.toolbar.brightred {
+  background:#cc0000;
+  background-image:-moz-linear-gradient(center top , #ff0000 0%, #cc0000 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#ff0000), to(#cc0000));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#ff0000', endColorStr='#cc0000');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#ff0000', endColorStr='#cc0000')";
+}
+div.CafePressWidget div.toolbar.mediumred {
+  background:#ff0000;
+  background-image:-moz-linear-gradient(center top , #ff3300 0%, #ff0000 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#ff3300), to(#ff0000));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#ff3300', endColorStr='#ff0000');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#ff3300', endColorStr='#ff0000')";
+}
+
+div.CafePressWidget div.toolbar.brightorange {
+  background:#ff6600;
+  background-image:-moz-linear-gradient(center top , #ff9900 0%, #ff6600 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#ff9900), to(#ff6600));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#ff9900', endColorStr='#ff6600');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#ff9900', endColorStr='#ff6600')";
+}
+div.CafePressWidget div.toolbar.orange {
+  background:#ff9900;
+  background-image:-moz-linear-gradient(center top , #ffcc00 0%, #ff9900 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#ffcc00), to(#ff9900));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#ffcc00', endColorStr='#ff9900');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#ffcc00', endColorStr='#ff9900')";
+}
+
+div.CafePressWidget div.toolbar.forestgreen {
+  background:#333300;
+  background-image:-moz-linear-gradient(center top , #006600 0%, #333300 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#006600), to(#333300));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#006600', endColorStr='#333300');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#006600', endColorStr='#333300')";
+}
+div.CafePressWidget div.toolbar.darkgreen {
+  background:#006600;
+  background-image:-moz-linear-gradient(center top , #009900 0%, #006600 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#009900), to(#006600));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#009900', endColorStr='#006600');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#009900', endColorStr='#006600')";
+}
+div.CafePressWidget div.toolbar.green {
+  background:#009900;
+  background-image:-moz-linear-gradient(center top , #00cc00 0%, #009900 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#00cc00), to(#009900));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#00cc00', endColorStr='#009900');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#00cc00', endColorStr='#009900')";
+}
+
+div.CafePressWidget div.toolbar.navyblue {
+  background:#000066;
+  background-image:-moz-linear-gradient(center top , #000088 0%, #000066 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#000088), to(#000066));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#000088', endColorStr='#000066');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#000088', endColorStr='#000066')";
+}
+div.CafePressWidget div.toolbar.cobaltblue {
+  background:#0000cc;
+  background-image:-moz-linear-gradient(center top , #0000ee 0%, #0000cc 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#0000ee), to(#0000cc));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#0000ee', endColorStr='#0000cc');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#0000ee', endColorStr='#0000cc')";
+}
+div.CafePressWidget div.toolbar.bluegreen {
+  background:#0099cc;
+  background-image:-moz-linear-gradient(center top , #0099ff 0%, #0099cc 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#0099ff), to(#0099cc));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#0099ff', endColorStr='#0099cc');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#0099ff', endColorStr='#0099cc')";
+}
+div.CafePressWidget div.toolbar.skyblue {
+  background:#3366ff;
+  background-image:-moz-linear-gradient(center top , #3399ff 0%, #3366ff 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#3399ff), to(#3366ff));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#3399ff', endColorStr='#3366ff');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#3399ff', endColorStr='#3366ff')";
+}
+
+div.CafePressWidget div.toolbar.eggplant {
+  background:#330066;
+  background-image:-moz-linear-gradient(center top , #330099 0%, #330066 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#330099), to(#330066));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#330099', endColorStr='#330066');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#330099', endColorStr='#330066')";
+}
+div.CafePressWidget div.toolbar.darkpurple {
+  background:#660099;
+  background-image:-moz-linear-gradient(center top , #6600cc 0%, #660099 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#6600cc), to(#660099));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#6600cc', endColorStr='#660099');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#6600cc', endColorStr='#660099')";
+}
+div.CafePressWidget div.toolbar.violet {
+  background:#663399;
+  background-image:-moz-linear-gradient(center top , #6633cc 0%, #663399 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#6633cc), to(#663399));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#6633cc', endColorStr='#663399');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#6633cc', endColorStr='#663399')";
+}
+div.CafePressWidget div.toolbar.fuchsia {
+  background:#990099;
+  background-image:-moz-linear-gradient(center top , #9900cc 0%, #990099 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#9900cc), to(#990099));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#9900cc', endColorStr='#990099');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#9900cc', endColorStr='#990099')";
+}
+div.CafePressWidget div.toolbar.maroon {
+  background:#990066;
+  background-image:-moz-linear-gradient(center top , #990099 0%, #990066 95%);
+  background-image:-webkit-gradient(linear, center top, center bottom, from(#990099), to(#990066));
+  filter: progid:DXImageTransform.Microsoftgradient(gradientType=1, startColorStr='#990099', endColorStr='#990066');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorStr='#990099', endColorStr='#990066')";
+}

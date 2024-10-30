@@ -1,0 +1,110 @@
+<html>
+<head>
+	<title>Cafepress Widget</title>
+	<script language="javascript" type="text/javascript" src="../../../wp-includes/js/tinymce/tiny_mce_popup.js"></script>
+	<script language="javascript" type="text/javascript" src="../../../wp-includes/js/tinymce/utils/mctabs.js"></script>
+	<script language="javascript" type="text/javascript" src="../../../wp-includes/js/tinymce/utils/form_utils.js"></script>
+	<script language="javascript" type="text/javascript" src="js/jquery-1.5.0.js"></script>
+  <script language="javascript" type="text/javascript">
+    function cafepress_code_insert() {
+      if (window.tinyMCE) {
+        var attr = ['[cafepress'];
+        var shop = jQuery('#shop_name').val();
+
+        if (shop != '') {
+          var products = 'shop:'+shop;
+          var filter = jQuery('#shop_filter').val();
+          if (filter != '') products = products + '|' + filter;
+          
+        } else {
+          var products    = "tags:"+jQuery('#tag_filter').val();
+          var affiliateid = jQuery('#affiliateid').val();
+          if (affiliateid != '') products = products + '|' + affiliateid;
+        }
+
+        attr.push('products="'+products+'"');
+
+        jQuery(['cols', 'rows']).each(function(){
+          var value = jQuery('#'+this).val();
+          if (value == '') return true;
+          
+          attr.push(this+'="'+value+'"');
+          return true;
+        });
+        attr.push(']');
+        
+        window.tinyMCE.execInstanceCommand('content', 'mceInsertContent', false, attr.join(' '));
+        //Repaints the editor. Sometimes the browser has graphic glitches.
+        tinyMCEPopup.editor.execCommand('mceRepaint');
+        tinyMCEPopup.close();
+      }
+      return;
+    }
+  </script>
+</head>
+<body id="link" onload="tinyMCEPopup.executeOnLoad('init();'); document.body.style.display=''; mcTabs.displayTab('tab_affiliates','panel_affiliates');" style="display: none">
+	<form name="cafepress" action="#">
+		<div class="tabs">
+			<ul>
+				<li id="tab_affiliates" class="current"><span><a href="javascript:mcTabs.displayTab('tab_affiliates','panel_affiliates');" onmousedown="return false;">Display CafePress Products!</a></span></li>
+				<li id="tab_shopkeeper" class="current"><span><a href="javascript:mcTabs.displayTab('tab_shopkeeper','panel_shopkeeper');" onmousedown="return false;">Promote CafePress Shop!</a></span></li>
+			</ul>
+		</div>
+
+		<div class="panel_wrapper" style="height: 140px;">
+			<div id="panel_affiliates">
+        <br />
+        <legend>CafePress Partner ID:</legend>
+        <i style="color: #555;">optional</i><br />
+        <input id="affiliateid" name="affiliateid" value="" style="width:80%; padding: 3px" /> <a title="CafePress Partner Signup" target="_blank" href="http://www.cafepress.com/content/cp-partners/">(?)</a>
+        <br />
+        <br />
+        <legend>Enter Design Id or Tag:</legend>
+        <label for="tag_filter"><i>use comma for multiple designs</i></label><br />
+        <input id="tag_filter" name="tag_filter" value="" style="width:80%; padding: 3px" />
+        <br />
+        
+			</div>
+      <div id="panel_shopkeeper">
+        
+        <br />
+        <legend>Shop Name:</legend>
+        <input id="shop_name" name="shop_name" value="" style="width:80%; padding: 3px" />
+        <br />
+        <br />
+        <legend>Enter Design Id or Tag:</legend>
+        <label for="shop_filter"><i>use comma for multiple designs</i></label><br />
+        <input id="shop_filter" name="shop_filter" value="" style="width:80%; padding: 3px" />
+
+        <br />
+
+      </div>
+		</div>
+    <br />
+    <fieldset style="background: #fff;">
+      <legend>CafePress Gallery Size</legend>
+      <table border="0" cellpadding="4" cellspacing="0">
+        <tr>
+          <td><label for="cols">Columns</label></td>
+          <td><input id="cols" name="cols" type="text" size="2" maxlength="3" value="3" /></td>
+        </tr>
+        <tr>
+          <td><label for="rows">Rows</label></td>
+          <td><input id="rows" name="rows" type="text" size="2" maxlength="3" value="2" /></td>
+        </tr>
+      </table>
+    </fieldset>
+    <br />
+
+		<div class="mceActionPanel">
+			<div style="float: left">
+				<input type="button" id="cancel" name="cancel" value="Cancel" onclick="tinyMCEPopup.close();" />
+			</div>
+
+			<div style="float: right">
+				<input type="submit" id="insert" name="insert" value="Insert" onclick="cafepress_code_insert();" />
+			</div>
+		</div>
+	</form>
+</body>
+</html>
